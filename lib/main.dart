@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import './random_words.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -7,18 +9,6 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(
         theme: ThemeData(primaryColor: Colors.green[900]),
-      home: Scaffold(
-    appBar: AppBar(    title: Text('Chat App')),
-        body: Center(
-          child: Text('Welcome to Chat App!'),
-        )
-    )
-    );
-
-
-
-
-
+        home: RandomWords());
   }
 }
-
